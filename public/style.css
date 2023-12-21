@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+    overflow: hidden;
+}
+
+.chat-section {
+    width: 800px;
+    max-width: 90%;
+    background: #ffffff;
+    box-shadow: 0 10px 15px -3px, 0 4px 6px -2px;
+
+}
+
+.brand {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background: #f27979;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #290000;
+    margin-left: 10px;
+}
+
+.message-area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+    background: #fbfbfb;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming {
+    background: #f27979;
+    color: #fff;
+    display: flex;
+    align-items: end;
+}
+
+.outgoing {
+    background: #cc4949;
+    color: #ffffff;
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-style: italic;
+}
