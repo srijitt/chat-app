@@ -20,11 +20,13 @@ function sendMessage(message) {
         message: message.trim()
     }
 
+    if(msg.message!= '') {
+
     appendMessage(msg, 'outgoing')
     textarea.value = ''
     scrollToBottom()
-
     socket.emit('message', msg)
+    }
 }
 
 function appendMessage(msg,  type) {

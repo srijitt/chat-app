@@ -3,19 +3,20 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(61, 61, 61);
+    font-family: sans-serif;
 }
 
 section {
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .chat-section {
     width: 800px;
     max-width: 90%;
     background: #ffffff;
-    box-shadow: 0 10px 15px -3px, 0 4px 6px -2px;
+    box-shadow: 0 0px 8px rgb(21, 130, 157);
 
 }
 
@@ -23,13 +24,13 @@ section {
     padding: 20px;
     display: flex;
     justify-content: center;
-    background: #f27979;
+    background: #0280a0;
 }
 
 .brand h1 {
-    text-transform: uppercase;
+    letter-spacing: 1px;
     font-size: 20px;
-    color: #290000;
+    color: #ffffff;
     margin-left: 10px;
 }
 
@@ -42,14 +43,22 @@ section {
     padding-top: 40px;
 }
 
+
+
 textarea {
     width: 100%;
     border: none;
     padding: 20px;
     font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     outline: none;
-    background: #fbfbfb;
+    background: #d1fdff;
+    font-family: sans-serif;
+}
+
+textarea::placeholder {
+    color: #00659f;
+    font-family: sans-serif;
+    letter-spacing: 1px;
 }
 
 .message {
@@ -61,14 +70,14 @@ textarea {
 }
 
 .incoming {
-    background: #f27979;
+    background: #5585c9;
     color: #fff;
     display: flex;
     align-items: end;
 }
 
 .outgoing {
-    background: #cc4949;
+    background: #49bbcc;
     color: #ffffff;
     margin-left: auto;
 }
